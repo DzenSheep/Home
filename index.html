@@ -3,84 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./pages/index.css">
-  <title>Жак-Ив Кусто</title>
+  <title>Великий рандомайзер</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4-я проектная работа Долгих С.И.">
+  <meta name="description" content="Домашнаяя лабуда">
   <meta name="author" content="Долгих Сергей Иванович">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nerko+One&display=swap" rel="stylesheet">
 </head>
 <body class="body">
   <header class="header">
-     <img class="header__logo" src="./images/header__logo.svg" alt="Логотип Mesto">
+    <img src="images/logo1.png" alt="Логотип" class="header__logo" width="88" height="88">
+    <h1 class="header__title">Великий рандомайзер совместного новогоднего досуга</h1>
+
+    <nav class="header__navigation">      
+        <a href="#" class="header__link">Домой</a>
+        <a href="#" class="header__link">Великий рандомайзер</a>
+        <a href="#" class="header__link">Немного няшных котиков</a>
+    </nav>
   </header>
   <main class="main">
-    <section class="profile"> 
-      <img class="profile__avatar" src="./images/profile__avatar.jpg" alt="Изображение Жака-Ив Кусто">
-      <div class="profile__info">
-        <h1 class="profile__name" id="profName">Жак-Ив Кусто</h1>
-        <button class="profile__edit" type="button"></button>
-        <p class="profile__about" id="profAbout">Исследователь океана</p>
-      </div>
-      <button class="profile__add" type="button"></button>
+    <section class="project">
+      <h1 class="project__title">Немного о проекте</h1>
+      <p class="project__subtitle">Здесь будет немного букв о проекте<br> 
+        Здесь будет немного букв о проекте<br>
+        Здесь будет немного букв о проекте<br>
+        Здесь будет немного букв о проекте
+      </p>
+      <button class="button" type="button" oneclick="arrayRandElement()"><p class="button__text">Рандомайзер</p></button>
     </section>
-    <section class="elements">
-      <article class="elements__item">
-        <img class="elements__picture" src="./images/karachevsk.jpg" alt="Карачевск">
-        <div class="elements__bottom">
-          <h3 class="elements__name">Карачевск</h3>
-          <button class="elements__like" type="button"></button>          
-        </div>
-      </article>
-      <article class="elements__item">
-        <img class="elements__picture" src="./images/Elbrus.png" alt="Гора Эльбрус">
-        <div class="elements__bottom">
-          <h3 class="elements__name">Гора Эльбрус</h3>
-          <button class="elements__like" type="button"></button>
-        </div>
-      </article>
-      <article class="elements__item">
-        <img class="elements__picture" src="./images/Dombai.png" alt="Домбай">
-        <div class="elements__bottom">
-          <h3 class="elements__name">Домбай</h3>
-          <button class="elements__like" type="button"></button>
-        </div>
-      </article>
-      <article class="elements__item">
-        <img class="elements__picture" src="./images/Elbrus.png" alt="Гора Эльбрус">
-        <div class="elements__bottom">
-          <h3 class="elements__name">Гора Эльбрус</h3>
-          <button class="elements__like" type="button"></button>
-        </div>
-      </article>
-      <article class="elements__item">
-        <img class="elements__picture" src="./images/Dombai.png" alt="Домбай">
-        <div class="elements__bottom">
-          <h3 class="elements__name">Домбай</h3>
-          <button class="elements__like" type="button"></button>
-        </div>
-      </article>
-      <article class="elements__item">
-        <img class="elements__picture" src="./images/karachevsk.jpg" alt="Карачевск">
-        <div class="elements__bottom">
-          <h3 class="elements__name">Карачевск</h3>
-          <button class="elements__like" type="button"></button>
-        </div>
-      </article>
+
+    <section class="cat">
+
+      <div class="cat__cell">
+        <h2 class="cat__title">Блюдим</h2>
+        <img src="/images/face.jpg" alt="Котик" class="cat__image">
+      </div>
+
+      <div class="cat__cell">
+        <h2 class="cat__title">Нашли штоле?</h2>
+        <img src="/images/in_home.jpg" alt="Котик" class="cat__image">
+      </div>
+
+      <div class="cat__cell">
+        <h2 class="cat__title">Спряталась!</h2>
+        <img src="/images/sprytalas.jpg" alt="Котик" class="cat__image">
+      </div>
+
+      <div class="cat__cell">
+        <h2 class="cat__title">Удобство!</h2>
+        <img src="/images/crown.jpg" alt="Котик" class="cat__image">
+      </div>
+
+      <div class="cat__cell">
+        <h2 class="cat__title">Кусяшки !!!</h2>
+        <img src="/images/omnom.jpg" alt="Котик" class="cat__image">
+      </div>
+
+      <div class="cat__cell">
+        <h2 class="cat__title">Меня видно ?</h2>
+        <img src="/images/spalilas.jpg" alt="Котик" class="cat__image">
+      </div>
+
     </section>
   </main>
-  <div class="popup">
-    <div class="popup__container">
-      <button class="popup__close" type="button"></button>
-      <form class="popup__form" name="popup__info">
-        <h2 class="popup__title">Редактировать профиль</h2>
-        <input class="popup__input" type="text" id="name" name="popup__name">
-        <input class="popup__input" type="text" id="about" name="popup__about">
-        <button class="popup__save" type="submit">Сохранить</button>
-      </form>
-    </div>
-  </div>
+
   <footer class="footer">
-    <p class="footer__copyright">&copy;2020 Mesto Russia</p>
-  </footer>  
-  <script src="./scripts/index.js"></script>
+    <article class="footer__copyright">&copy;2022 Сила в котятах !</article>
+  </footer>
+  <script type="text/javascript" src="./scripts/index.js"></script>
 </body>
 </html>
