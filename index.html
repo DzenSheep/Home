@@ -12,15 +12,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nerko+One&display=swap" rel="stylesheet">
 </head>
 <body class="body">
-  <header class="header">
-    <img src="images/logo1.png" alt="Логотип" class="header__logo" width="88" height="88">
+  <header class="header" id="header">
+    <a href="#header" class="header__logo_link link">
+    <img src="images/logo1.png" alt="Логотип" class="header__logo" width="88" height="88"></a>
     <h1 class="header__title">Великий рандомайзер совместного новогоднего досуга</h1>
+    
 
-    <nav class="header__navigation">      
-        <a href="#" class="header__link">Домой</a>
-        <a href="#" class="header__link">Великий рандомайзер</a>
-        <a href="#" class="header__link">Немного няшных котиков</a>
-    </nav>
+    <div class="header__right">
+      <img class="header__three_logo" src="./images/three.png" width="120" height="120">
+      <nav class="header__navigation">
+        <a href="#button" class="header__link link">
+          <img class="header__link_logo logo1" src="./images/logo2.png" width="44" height="44">
+        </a>
+        <a href="#cats" class="header__link link">
+          <img class="header__link_logo logo2" src="./images/logo3.png" width="44" height="44">
+        </a>
+        <a href="#cats" class="header__link link">
+          <img class="header__link_logo logo3" src="./images/logo1.png" width="44" height="44">
+        </a>
+      </nav>
+    </div>
+
+
   </header>
   <main class="main">
     <section class="project">
@@ -30,10 +43,10 @@
         Здесь будет немного букв о проекте<br>
         Здесь будет немного букв о проекте
       </p>
-      <button class="button" type="button" oneclick="arrayRandElement()"><p class="button__text">Рандомайзер</p></button>
+      <button id="button" class="button" type="button" oneclick="arrayRandElement()"><p class="button__text">Рандомайзер</p></button>
     </section>
 
-    <section class="cat">
+    <section class="cat" id="cats">
 
       <div class="cat__cell">
         <h2 class="cat__title">Блюдим</h2>
@@ -64,13 +77,24 @@
         <h2 class="cat__title">Меня видно ?</h2>
         <img src="/images/spalilas.jpg" alt="Котик" class="cat__image">
       </div>
-
     </section>
   </main>
+
+  <figure class="center">
+    <img class="center__picture" src="./images/CenterPicture.jpg">
+    <img src="./images/close.png" alt="закрыть" class="center__picture_close" width="44" height="44">
+    <p class="center__picture_text">Какой-то текст</p>
+  </figure>
+
+  <figure class="center__cats">
+    <img src="/images/crown.jpg" alt="Котик" class="center__cat">
+    <img src="./images/close.png" alt="закрыть" class="center__cat_close" width="44" height="44">
+  </figure>
 
   <footer class="footer">
     <article class="footer__copyright">&copy;2022 Сила в котятах !</article>
   </footer>
+
   <script type="text/javascript" src="./scripts/index.js"></script>
 </body>
 </html>
